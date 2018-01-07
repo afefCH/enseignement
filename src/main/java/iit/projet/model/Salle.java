@@ -26,6 +26,11 @@ public class Salle implements Serializable{
 
 	@OneToMany(fetch = FetchType.EAGER, mappedBy = "salle")
 	List<Cours> cours;
+	
+	public Salle()
+	{
+		
+	}
 
 	public Salle(String nom, int etage, int capacite, List<Cours> cours) {
 		super();

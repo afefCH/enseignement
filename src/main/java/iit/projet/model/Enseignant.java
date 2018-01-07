@@ -29,6 +29,11 @@ public class Enseignant implements Serializable{
 
 	@OneToMany(fetch = FetchType.EAGER, mappedBy = "enseignant")
 	List<Cours> cours;
+	
+	public Enseignant()
+	{
+		
+	}
 
 	public Enseignant(String nom, String prenom, String tel, String adresse, String grade, String email,
 			List<Cours> cours) {

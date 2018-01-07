@@ -36,6 +36,11 @@ public class Seance implements Serializable{
 
 	@OneToMany(fetch = FetchType.EAGER, mappedBy = "seance")
 	List<Cours> cours;
+	
+	public Seance()
+	{
+		
+	}
 
 	public Seance(String libelle, Date heureDebut, Date heureFin, List<Cours> cours) {
 		super();

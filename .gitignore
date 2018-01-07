@@ -7,3 +7,5 @@
 .springBeans
 .tern-project
 mvnw
+mvnw.cmd
+.mvn/wrapper

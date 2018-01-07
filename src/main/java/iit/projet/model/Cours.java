@@ -32,6 +32,11 @@ public class Cours implements Serializable{
 
 	@ManyToOne
 	private Groupe groupe;
+	
+	public Cours()
+	{
+		
+	}
 
 	public Cours(String libelle, Salle salle, Enseignant enseignant, Seance seance, Groupe groupe) {
 		super();
